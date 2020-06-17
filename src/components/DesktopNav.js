@@ -1,17 +1,13 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import logo from "../images/acme-corp-logo.png";
+import Content from "./Content";
 
 const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  align-content: center;
-  align-items: flex-end;
-  flex-wrap: wrap;
-  background: white;
-  min-height: 72px;
-  padding: 16px 16px 8px 16px;
+  padding: 0px 16px 8px 16px;
   width: 100%;
   border-bottom: solid 12px rgb(0, 7, 33);
 `;
@@ -55,8 +51,9 @@ const LinksWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-content: flex-end;
+  align-items: flex-end;
   flex-wrap: wrap;
-  padding-bottom: 4px;
+  padding-bottom: 2px;
 `;
 
 // TODO: Replace with react router link tag
@@ -64,28 +61,30 @@ const Link = styled.a`
   text-decoration: none;
   color: gray;
   font-size: 16px;
-  margin: 12px 24px;
+  margin: 0 24px;
 `;
 
 export default class DesktopNav extends Component {
   render() {
     return (
       <Container>
-        <LogoBackground>
-          <Logo src={logo} alt="Acme Corporation Logo" />
-        </LogoBackground>
-        <SiteTitle>
-          <p>Research Professional</p>
-          <h2>Platform</h2>
-        </SiteTitle>
-        <Divider />
-        <LinksWrapper>
-          <Link href="/">Home</Link>
-          <Link href="/about-us">About Us</Link>
-          <Link href="/insights">Insights</Link>
-          <Link href="/events">Events</Link>
-          <Link href="/contact-us">Contact Us</Link>
-        </LinksWrapper>
+        <Content alignContent="flex-end" alignItems="flex-end">
+          <LogoBackground>
+            <Logo src={logo} alt="Acme Corporation Logo" />
+          </LogoBackground>
+          <SiteTitle>
+            <p>Research Professional</p>
+            <h2>Platform</h2>
+          </SiteTitle>
+          <Divider />
+          <LinksWrapper>
+            <Link href="/">Home</Link>
+            <Link href="/about-us">About Us</Link>
+            <Link href="/insights">Insights</Link>
+            <Link href="/events">Events</Link>
+            <Link href="/contact-us">Contact Us</Link>
+          </LinksWrapper>
+        </Content>
       </Container>
     );
   }

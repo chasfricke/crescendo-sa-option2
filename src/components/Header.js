@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import DesktopNav from "./DesktopNav.js";
-import ContentWidth from "./ContentWidth";
 
 const Container = styled.div`
   display: flex;
@@ -16,9 +15,7 @@ export default class Header extends Component {
   render() {
     return (
       <Container>
-        <ContentWidth>
-          <DesktopNav />
-        </ContentWidth>
+        <DesktopNav />
       </Container>
     );
   }
