@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import logo from "../images/acme-corp-logo.png";
-import Content from "./Content";
+import { MAXWIDTH } from "../constants";
 
 const Container = styled.div`
   display: flex;
@@ -64,11 +64,20 @@ const Link = styled.a`
   margin: 0 24px;
 `;
 
+const Content = styled.div`
+  display: flex;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
+  width: 100%;
+  max-width: ${MAXWIDTH};
+`;
+
 export default class DesktopNav extends Component {
   render() {
     return (
       <Container>
-        <Content alignContent="flex-end" alignItems="flex-end">
+        <Content>
           <LogoBackground>
             <Logo src={logo} alt="Acme Corporation Logo" />
           </LogoBackground>
