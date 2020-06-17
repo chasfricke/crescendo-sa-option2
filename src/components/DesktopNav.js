@@ -8,8 +8,9 @@ const Container = styled.div`
   justify-content: center;
   align-content: center;
   align-items: flex-end;
+  flex-wrap: wrap;
   background: white;
-  height: 72px;
+  min-height: 72px;
   padding: 16px 16px 8px 16px;
   width: 100%;
   border-bottom: solid 12px rgb(0, 7, 33);
@@ -54,6 +55,7 @@ const LinksWrapper = styled.div`
   display: flex;
   flex-direction: row;
   align-content: flex-end;
+  flex-wrap: wrap;
   padding-bottom: 4px;
 `;
 
@@ -62,7 +64,7 @@ const Link = styled.a`
   text-decoration: none;
   color: gray;
   font-size: 16px;
-  margin: 0 24px;
+  margin: 12px 24px;
 `;
 
 export default class DesktopNav extends Component {

@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import DesktopNav from "./DesktopNav.js";
+import ContentWidth from "./ContentWidth";
 
 const Container = styled.div`
   display: flex;
@@ -8,14 +9,16 @@ const Container = styled.div`
   justify-content: center;
   align-content: center;
   background: white;
-  width: 100vw;
+  width: 100%;
 `;
 
 export default class Header extends Component {
   render() {
     return (
       <Container>
-        <DesktopNav />
+        <ContentWidth>
+          <DesktopNav />
+        </ContentWidth>
       </Container>
     );
   }
