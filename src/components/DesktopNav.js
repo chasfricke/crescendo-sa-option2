@@ -9,14 +9,14 @@ const Container = styled.div`
   align-content: center;
   align-items: flex-end;
   background: white;
-  height: 40px;
-  padding: 16px;
+  height: 72px;
+  padding: 16px 16px 8px 16px;
   width: 100%;
-  border-bottom: solid 9px rgb(0, 7, 33);
+  border-bottom: solid 12px rgb(0, 7, 33);
 `;
 
 const Logo = styled.img`
-  height: 60px;
+  height: 78px;
   width: auto;
 `;
 
@@ -24,22 +24,45 @@ const LogoBackground = styled.div`
   background: white;
   padding: 2px 9px;
   position: relative;
-  top: 21px;
+  top: 14px;
 `;
 
-const HeaderTitle = styled.div`
+const SiteTitle = styled.div`
   display: flex;
   flex-direction: column;
   justify-content: flex-bottom;
   align-content: center;
-  margin: 0 16px;
+  margin: 0 16px 0 24px;
   p {
     color: blue;
-    font-size: 11px;
+    font-size: 13px;
   }
   h2 {
+    font-size: 32px;
     color: darkblue;
   }
+`;
+
+const Divider = styled.div`
+  height: 36px;
+  width: 2px;
+  background: #dadada;
+  margin: 0 6px 6px 12px;
+`;
+
+const LinksWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  align-content: flex-end;
+  padding-bottom: 4px;
+`;
+
+// TODO: Replace with react router link tag
+const Link = styled.a`
+  text-decoration: none;
+  color: gray;
+  font-size: 16px;
+  margin: 0 24px;
 `;
 
 export default class DesktopNav extends Component {
@@ -49,10 +72,18 @@ export default class DesktopNav extends Component {
         <LogoBackground>
           <Logo src={logo} alt="Acme Corporation Logo" />
         </LogoBackground>
-        <HeaderTitle>
+        <SiteTitle>
           <p>Research Professional</p>
           <h2>Platform</h2>
-        </HeaderTitle>
+        </SiteTitle>
+        <Divider />
+        <LinksWrapper>
+          <Link href="/">Home</Link>
+          <Link href="/about-us">About Us</Link>
+          <Link href="/insights">Insights</Link>
+          <Link href="/events">Events</Link>
+          <Link href="/contact-us">Contact Us</Link>
+        </LinksWrapper>
       </Container>
     );
   }
