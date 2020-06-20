@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import OutlineButton from "../OutlineButton.js";
+import OutlineButton from "../buttons/OutlineButton.js";
 
 const Card = styled.div`
   display: flex;

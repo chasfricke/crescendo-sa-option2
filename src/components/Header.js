@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import DesktopNav from "./DesktopNav.js";
+import DesktopNav from "./nav/DesktopNav.js";
+import MobileNav from "./nav/MobileNav.js";
 
 const Container = styled.div`
   display: flex;
@@ -15,6 +16,7 @@ export default class Header extends Component {
     return (
       <Container>
         <DesktopNav />
+        <MobileNav />
       </Container>
     );
   }

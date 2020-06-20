@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import logo from "../images/acme-corp-logo.png";
-import { MAXWIDTH } from "../constants";
+import logo from "../../images/acme-corp-logo.png";
+import { MAXWIDTH, MOBILEBREAKPOINT } from "../../constants";
 
 const Container = styled.div`
   display: flex;
@@ -10,6 +10,10 @@ const Container = styled.div`
   padding: 0px 16px 8px 16px;
   width: 100%;
   border-bottom: solid 12px rgb(0, 7, 33);
+  display: none;
+  @media screen and (min-width: ${MOBILEBREAKPOINT}) {
+    display: inline-block;
+  }
 `;
 
 const Logo = styled.img`

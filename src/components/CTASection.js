@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import styled from "styled-components";
 import { MAXWIDTH } from "../constants";
-import OutlineButton from "./OutlineButton.js";
+import OutlineButton from "./buttons/OutlineButton.js";
 import background from "../images/blue-poly-background.png";
 
 const Container = styled.div`
