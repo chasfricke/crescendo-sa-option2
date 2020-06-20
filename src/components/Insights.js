@@ -11,6 +11,7 @@ class Insights extends Component {
       <CardSection
         title="ACME Insights"
         subTitle="How are factors being used around the world?"
+        bgColor="#dadada"
       >
         <InsightCard
           line1="Global Factor"
