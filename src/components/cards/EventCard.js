@@ -15,7 +15,7 @@ const Card = styled.div`
   box-sizing: border-box;
   color: white;
   position: relative;
-  margin-top: 22px;
+  margin: 22px 0;
 `;
 
 const Title = styled.h4`

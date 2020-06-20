@@ -10,9 +10,9 @@ const Card = styled.div`
   background: white;
   padding: 24px 16px 16px 16px;
   box-sizing: border-box;
-  -webkit-box-shadow: 1px 0px 7px 2px rgba(0, 0, 0, 0.27);
-  -moz-box-shadow: 1px 0px 7px 2px rgba(0, 0, 0, 0.27);
-  box-shadow: 1px 0px 7px 2px rgba(0, 0, 0, 0.27);
+  -webkit-box-shadow: 1px 0px 7px 1px rgba(0, 0, 0, 0.2);
+  -moz-box-shadow: 1px 0px 7px 1px rgba(0, 0, 0, 0.2);
+  box-shadow: 1px 0px 7px 1px rgba(0, 0, 0, 0.2);
 `;
 
 const Image = styled.div`
