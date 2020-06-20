@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import styled from "styled-components";
 import CardSection from "./CardSection.js";
 import InsightCard from "./cards/InsightCard";
 import Insight1 from "../images/insights/insight-1.png";
