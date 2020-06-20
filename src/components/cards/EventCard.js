@@ -51,7 +51,7 @@ const DateSquare = styled.div`
   justify-content: center;
   width: 62px;
   height: 55px;
-  background: darkblue;
+  background: #001254;
   text-align: center;
 `;
 

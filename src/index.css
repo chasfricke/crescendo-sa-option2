@@ -108,6 +108,7 @@ section {
 body {
   line-height: 1;
   box-sizing: border-box;
+  font-family: Helvetica;
 }
 ol,
 ul {
