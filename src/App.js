@@ -2,14 +2,14 @@ import React from "react";
 import Header from "./components/Header.js";
 import Hero from "./components/Hero.js";
 import Footer from "./components/Footer.js";
-import CardSection from "./components/CardSection.js";
+import Insights from "./components/Insights.js";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      <CardSection />
+      <Insights />
       <Footer />
     </>
   );

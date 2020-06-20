@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import background from "../images/hero-background.png";
+import background from "../images/hero.png";
 import { MAXWIDTH } from "../constants";
 
 const Container = styled.section`
