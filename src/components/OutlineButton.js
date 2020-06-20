@@ -2,10 +2,16 @@ import React, { Component } from "react";
 import styled from "styled-components";
 
 const Border = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: center;
+  align-items: center;
   border: solid 1px white;
   margin: 1px;
+  width: fit-content;
   min-width: 100px;
-  padding: 10px 14px;
+  padding: 9px 14px;
   cursor: pointer;
   :hover {
     border: solid 2px white;
@@ -13,8 +19,9 @@ const Border = styled.div`
   }
 `;
 
-const Label = styled.p`
+const Label = styled.span`
   font-size: 14px;
+  color: white;
 `;
 
 class OutlineButton extends Component {
