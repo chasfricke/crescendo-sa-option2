@@ -6,9 +6,9 @@ const Border = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  height: 36px;
+  height: 48px;
   width: 100%;
-  background: lightgray;
+  background: #e8e8e8;
   margin-bottom: 8px;
 `;
 
