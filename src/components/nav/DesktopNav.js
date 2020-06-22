@@ -4,9 +4,6 @@ import logo from "../../images/acme-corp-logo.png";
 import { MAXWIDTH, MOBILEBREAKPOINT } from "../../constants";
 
 const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
   padding: 0px 16px 8px 16px;
   width: 100%;
   border-bottom: solid 12px rgb(0, 7, 33);
@@ -14,6 +11,16 @@ const Container = styled.div`
   @media screen and (min-width: ${MOBILEBREAKPOINT}) {
     display: inline-block;
   }
+`;
+
+const Content = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-content: flex-end;
+  align-items: flex-end;
+  min-width: 100%;
+  max-width: ${MAXWIDTH};
 `;
 
 const Logo = styled.img`
@@ -66,15 +73,6 @@ const Link = styled.a`
   color: gray;
   font-size: 16px;
   margin: 0 24px;
-`;
-
-const Content = styled.div`
-  display: flex;
-  justify-content: center;
-  align-content: flex-end;
-  align-items: flex-end;
-  width: 100%;
-  max-width: ${MAXWIDTH};
 `;
 
 export default class DesktopNav extends Component {
