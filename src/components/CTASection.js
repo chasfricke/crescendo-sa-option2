@@ -3,13 +3,17 @@ import styled from "styled-components";
 import { MAXWIDTH } from "../constants";
 import OutlineButton from "./buttons/OutlineButton.js";
 import background from "../images/blue-poly-background.png";
+import { MOBILEBREAKPOINT } from "../constants";
 
 const Container = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  padding: 72px 0;
+  padding: 72px 36px;
   background-image: url(${background});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 `;
 
 const Content = styled.div`
@@ -26,10 +30,23 @@ const Content = styled.div`
     font-weight: 600;
     margin-bottom: 12px;
   }
+  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+    h4 {
+      font-size: 24px;
+      line-height: 28px;
+      font-weight: 500;
+      max-width: 200px;
+    }
+  }
 `;
 
 const Copy = styled.p`
   font-size: 18px;
+  line-height: 24px;
+  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+    font-weight: 300;
+    font-size: 16px;
+  }
 `;
 
 const ButtonMargin = styled.div`
@@ -46,7 +63,7 @@ class CTASection extends Component {
             We help our partners deliver industry leading results with a
             commitment to excellence, thought-provoking insights and experienced
             distribution. We are laser focused on our shared goal - helping
-            clients achieve their objectives.
+            clients achieve their&nbsp;objectives.
           </Copy>
           <ButtonMargin>
             <OutlineButton label="Contact Us" />
