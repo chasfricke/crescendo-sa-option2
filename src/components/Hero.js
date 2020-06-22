@@ -13,6 +13,7 @@ const Container = styled.section`
   height: 410px;
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: right;
   @media screen and (max-width: ${MOBILEBREAKPOINT}) {
     background: skyblue;
     padding: 36px;

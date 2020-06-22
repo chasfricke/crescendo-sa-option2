@@ -10,16 +10,19 @@ const Container = styled.div`
   display: none;
   @media screen and (min-width: ${MOBILEBREAKPOINT}) {
     display: inline-block;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
   }
 `;
 
 const Content = styled.div`
   display: flex;
   flex-direction: row;
-  justify-content: center;
+  justify-content: space-between;
   align-content: flex-end;
   align-items: flex-end;
-  min-width: 100%;
+  width: 100%;
   max-width: ${MAXWIDTH};
 `;
 
