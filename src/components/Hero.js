@@ -50,6 +50,7 @@ const TextBlock = styled.div`
   }
 
   #dotted-line {
+    display: none;
     margin: 0 0 12px 0;
     color: white;
   }
@@ -66,6 +67,9 @@ const TextBlock = styled.div`
       max-width: 100px;
       line-height: 38px;
       margin: 8px 0 0 0;
+    }
+    #dotted-line {
+      display: inline-block;
     }
   }
 `;
