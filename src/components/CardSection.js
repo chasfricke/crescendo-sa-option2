@@ -1,13 +1,18 @@
 import React, { Component } from "react";
 import styled from "styled-components";
-import { MAXWIDTH } from "../constants";
+import { MAXWIDTH, MOBILEBREAKPOINT } from "../constants";
 
 const Container = styled.section`
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  padding: 32px 0;
+  height: auto;
+  padding: 32px;
+  box-sizing: border-box;
+  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+    padding: 36px;
+  }
 `;
 
 const Content = styled.div`

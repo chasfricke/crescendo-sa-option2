@@ -1,8 +1,8 @@
 import React, { Component } from "react";
-import CardSection from "./CardSection.js";
-import EventCard from "./cards/EventCard";
+import CardSection from "../CardSection.js";
+import EventCard from "../cards/EventCard";
 
-class Events extends Component {
+class EventsDesktop extends Component {
   render() {
     return (
       <CardSection
@@ -35,4 +35,4 @@ class Events extends Component {
   }
 }
 
-export default Events;
+export default EventsDesktop;

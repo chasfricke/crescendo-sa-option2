@@ -4,14 +4,14 @@ import Hero from "./components/Hero.js";
 import Footer from "./components/footer/Footer.js";
 import Insights from "./components/Insights.js";
 import CTASection from "./components/CTASection";
-import Events from "./components/Events";
+import Events from "./components/events/Events";
 
 function App() {
   return (
     <>
       <Header />
       <Hero />
-      <Insights />
+      {/* <Insights /> */}
       <CTASection />
       <Events />
       <Footer />
