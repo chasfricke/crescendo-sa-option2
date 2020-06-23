@@ -1,8 +1,9 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import { throttle } from "lodash";
 import EventsCarousel from "./EventsCarousel.js";
 import EventsDesktop from "./EventsDesktop.js";
-import { MOBILEBREAKPOINT, MAXWIDTH } from "../../constants";
+import { MOBILEBREAKPOINT } from "../../constants";
 
 const Container = styled.div`
   width: 100%;
@@ -11,34 +12,33 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const Mobile = styled.div`
-  display: none;
-  @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
-    display: inline-block;
-    width: 100%;
-    max-width: ${MAXWIDTH};
-  }
-`;
-
-const Desktop = styled.div`
-  display: none;
-  @media screen and (min-width: ${MOBILEBREAKPOINT + 1}px) {
-    display: inline-block;
-    width: 100%;
-    max-width: ${MAXWIDTH};
-  }
-`;
-
 class Events extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isMobile: false };
+  }
+
+  componentDidMount() {
+    this.handleWindowResize();
+    window.addEventListener("resize", throttle(this.handleWindowResize, 200));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener(
+      "resize",
+      throttle(this.handleWindowResize, 200)
+    );
+  }
+
+  handleWindowResize = () => {
+    console.log("resized");
+    this.setState({ isMobile: window.innerWidth < MOBILEBREAKPOINT });
+  };
+
   render() {
     return (
       <Container>
-        <Mobile>
-          <EventsCarousel />
-        </Mobile>
-        <Desktop>
-          <EventsDesktop />
-        </Desktop>
+        {this.state.isMobile ? <EventsCarousel /> : <EventsDesktop />}
       </Container>
     );
   }

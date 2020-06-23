@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import styled from "styled-components";
+import throttle from "lodash.throttle";
 import InsightsCarousel from "./InsightsCarousel.js";
 import InsightsDesktop from "./InsightsDesktop.js";
 import { MOBILEBREAKPOINT } from "../../constants";
@@ -11,32 +12,33 @@ const Container = styled.div`
   justify-content: center;
 `;
 
-const Mobile = styled.div`
-  display: none;
-  @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
-    display: inline-block;
-    min-width: 100%;
-  }
-`;
-
-const Desktop = styled.div`
-  display: none;
-  @media screen and (min-width: ${MOBILEBREAKPOINT + 1}px) {
-    display: inline-block;
-    width: 100%;
-  }
-`;
-
 class Events extends Component {
+  constructor(props) {
+    super(props);
+    this.state = { isMobile: false };
+  }
+
+  componentDidMount() {
+    this.handleWindowResize();
+    window.addEventListener("resize", throttle(this.handleWindowResize, 200));
+  }
+
+  componentWillUnmount() {
+    window.removeEventListener(
+      "resize",
+      throttle(this.handleWindowResize, 200)
+    );
+  }
+
+  handleWindowResize = () => {
+    this.setState({ isMobile: window.innerWidth < MOBILEBREAKPOINT });
+  };
+
   render() {
+    const { isMobile } = this.state;
     return (
       <Container>
-        <Mobile>
-          <InsightsCarousel />
-        </Mobile>
-        <Desktop>
-          <InsightsDesktop />
-        </Desktop>
+        {isMobile ? <InsightsCarousel /> : <InsightsDesktop />}
       </Container>
     );
   }
