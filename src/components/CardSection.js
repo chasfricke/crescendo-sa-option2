@@ -41,7 +41,12 @@ const CardRow = styled.div`
 class CardSection extends Component {
   render() {
     return (
-      <Container style={{ background: `${this.props.bgColor}` }}>
+      <Container
+        style={{
+          background: `${this.props.bgColor}`,
+          color: `${this.props.color}`,
+        }}
+      >
         <Content>
           <h3>{this.props.title}</h3>
           <p>{this.props.subTitle}</p>

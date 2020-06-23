@@ -5,16 +5,16 @@ import CardSection from "../CardSection.js";
 import EventCard from "../cards/EventCard";
 import logo from "../../images/logo-no-text.png";
 
+const Content = styled.div`
+  display: flex;
+  flex-direction: column;
+`;
+
 const CarouselRow = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
   width: calc(100vw - 36px);
-`;
-
-const Content = styled.div`
-  display: flex;
-  flex-direction: column;
 `;
 
 const LogoWrapper = styled.div`

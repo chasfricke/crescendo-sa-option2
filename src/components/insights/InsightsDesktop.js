@@ -1,11 +1,11 @@
 import React, { Component } from "react";
-import CardSection from "./CardSection.js";
-import InsightCard from "./cards/InsightCard";
-import Insight1 from "../images/insights/insight-1.png";
-import Insight2 from "../images/insights/insight-2.png";
-import Insight3 from "../images/insights/insight-3.png";
+import CardSection from "../CardSection.js";
+import InsightCard from "../cards/InsightCard";
+import Insight1 from "../../images/insights/insight-1.png";
+import Insight2 from "../../images/insights/insight-2.png";
+import Insight3 from "../../images/insights/insight-3.png";
 
-class Insights extends Component {
+class InsightsDesktop extends Component {
   render() {
     return (
       <CardSection
@@ -36,4 +36,4 @@ class Insights extends Component {
   }
 }
 
-export default Insights;
+export default InsightsDesktop;
