@@ -30,7 +30,7 @@ const Content = styled.div`
     font-weight: 600;
     margin-bottom: 12px;
   }
-  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
     h4 {
       font-size: 24px;
       line-height: 28px;
@@ -43,7 +43,7 @@ const Content = styled.div`
 const Copy = styled.p`
   font-size: 18px;
   line-height: 24px;
-  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
     font-weight: 300;
     font-size: 16px;
   }

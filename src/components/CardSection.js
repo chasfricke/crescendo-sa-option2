@@ -11,7 +11,7 @@ const Container = styled.section`
   padding: 32px 0;
   max-width: 100vw;
   box-sizing: border-box;
-  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
     padding: 36px;
     box-sizing: border-box;
   }

@@ -12,7 +12,6 @@ const CarouselRow = styled.div`
   flex-direction: row;
   justify-content: center;
   width: 100%;
-  padding-left: 36px;
 `;
 
 class InsightsCarousel extends Component {
@@ -30,8 +29,8 @@ class InsightsCarousel extends Component {
             slidesStoShow={1}
             transitionMode="scroll3d"
             cellSpacing={0}
-            height={350}
-            width={360}
+            height="350px"
+            width="360px"
             renderCenterLeftControls={({ previousSlide }) => null}
             renderCenterRightControls={({ nextSlide }) => null}
             defaultControlsConfig={{

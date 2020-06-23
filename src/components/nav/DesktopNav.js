@@ -8,7 +8,7 @@ const Container = styled.div`
   width: 100%;
   border-bottom: solid 12px rgb(0, 7, 33);
   display: none;
-  @media screen and (min-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (min-width: ${MOBILEBREAKPOINT}px) {
     display: inline-block;
     display: flex;
     flex-direction: row;

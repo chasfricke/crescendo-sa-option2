@@ -8,7 +8,7 @@ import { MAXWIDTH, MOBILEBREAKPOINT } from "../../constants";
 
 const Content = styled.div`
   display: none;
-  @media screen and (min-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (min-width: ${MOBILEBREAKPOINT}px) {
     display: inline-block;
     display: flex;
     flex-direction: row;

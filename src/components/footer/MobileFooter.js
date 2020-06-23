@@ -5,7 +5,7 @@ import { MAXWIDTH, MOBILEBREAKPOINT } from "../../constants";
 
 const Content = styled.div`
   display: none;
-  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
     display: inline-block;
     display: flex;
     flex-direction: column;

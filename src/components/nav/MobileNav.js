@@ -11,7 +11,7 @@ const Container = styled.div`
   position: relative;
   display: none;
   background: #f0f0f0;
-  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
     display: inline-block;
   }
 `;

@@ -14,7 +14,7 @@ const Container = styled.section`
   background-repeat: no-repeat;
   background-size: cover;
   background-position: right;
-  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
     background: #2a9df4;
     padding: 36px;
   }
@@ -55,7 +55,7 @@ const TextBlock = styled.div`
     color: white;
   }
 
-  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
     p {
       font-size: 16px;
       margin-bottom: 6px;
@@ -76,7 +76,7 @@ const TextBlock = styled.div`
 
 const MobileTitle = styled.p`
   display: none;
-  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
     display: inline-block;
     position: absolute;
     top: 0;

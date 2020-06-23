@@ -1,2 +1,2 @@
-export const MOBILEBREAKPOINT = "970px";
+export const MOBILEBREAKPOINT = 970;
 export const MAXWIDTH = "900px";

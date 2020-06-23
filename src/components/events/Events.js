@@ -13,7 +13,7 @@ const Container = styled.div`
 
 const Mobile = styled.div`
   display: none;
-  @media screen and (max-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
     display: inline-block;
     width: 100%;
     max-width: ${MAXWIDTH};
@@ -22,7 +22,7 @@ const Mobile = styled.div`
 
 const Desktop = styled.div`
   display: none;
-  @media screen and (min-width: ${MOBILEBREAKPOINT}) {
+  @media screen and (min-width: ${MOBILEBREAKPOINT + 1}px) {
     display: inline-block;
     width: 100%;
     max-width: ${MAXWIDTH};
