@@ -8,10 +8,12 @@ const Container = styled.section`
   justify-content: center;
   width: 100%;
   height: auto;
-  padding: 32px;
+  padding: 32px 0;
+  max-width: 100vw;
   box-sizing: border-box;
   @media screen and (max-width: ${MOBILEBREAKPOINT}) {
     padding: 36px;
+    box-sizing: border-box;
   }
 `;
 
