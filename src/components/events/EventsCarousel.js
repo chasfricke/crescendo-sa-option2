@@ -47,8 +47,8 @@ class EventsCarousel extends Component {
               slidesStoShow={1}
               transitionMode="scroll3d"
               cellSpacing={0}
-              height={300}
-              width={380}
+              height="300px"
+              width="380px"
               renderCenterLeftControls={({ previousSlide }) => null}
               renderCenterRightControls={({ nextSlide }) => null}
               defaultControlsConfig={{

@@ -31,7 +31,6 @@ class Events extends Component {
   }
 
   handleWindowResize = () => {
-    console.log("resized");
     this.setState({ isMobile: window.innerWidth < MOBILEBREAKPOINT });
   };
 
