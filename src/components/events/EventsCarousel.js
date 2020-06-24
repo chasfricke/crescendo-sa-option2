@@ -3,7 +3,7 @@ import Carousel from "nuka-carousel";
 import styled from "styled-components";
 import CardSection from "../CardSection.js";
 import EventCard from "../cards/EventCard";
-import logo from "../../images/logo-no-text.png";
+// import logo from "../../images/logo-no-text.png";
 
 const Content = styled.div`
   display: flex;
@@ -18,21 +18,21 @@ const CarouselRow = styled.div`
   width: calc(100vw - 36px);
 `;
 
-const LogoWrapper = styled.div`
-  height: 100%;
-  width: 100%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  margin-top: 12px;
-  margin-left: -16px;
-`;
+// const LogoWrapper = styled.div`
+//   height: 100%;
+//   width: 100%;
+//   display: flex;
+//   flex-direction: column;
+//   justify-content: center;
+//   align-items: center;
+//   margin-top: 12px;
+//   margin-left: -16px;
+// `;
 
-const Logo = styled.img`
-  height: 48px;
-  width: auto;
-`;
+// const Logo = styled.img`
+//   height: 48px;
+//   width: auto;
+// `;
 
 class EventsCarousel extends Component {
   render() {
@@ -82,9 +82,9 @@ class EventsCarousel extends Component {
               />
             </Carousel>
           </CarouselRow>
-          <LogoWrapper>
+          {/* <LogoWrapper>
             <Logo src={logo} alt="Acme Corporation Logo" />
-          </LogoWrapper>
+          </LogoWrapper> */}
         </Content>
       </CardSection>
     );
