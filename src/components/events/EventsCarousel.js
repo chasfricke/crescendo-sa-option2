@@ -8,6 +8,7 @@ import logo from "../../images/logo-no-text.png";
 const Content = styled.div`
   display: flex;
   flex-direction: column;
+  justify-content: space-between;
 `;
 
 const CarouselRow = styled.div`
