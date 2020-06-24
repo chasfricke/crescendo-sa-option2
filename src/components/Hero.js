@@ -53,20 +53,24 @@ const TextBlock = styled.div`
     display: none;
     margin: 0 0 12px 0;
     color: white;
+    color: rgba(255, 255, 255, 0.5);
   }
 
   @media screen and (max-width: ${MOBILEBREAKPOINT}px) {
     p {
-      font-size: 16px;
+      font-size: 15px;
       margin-bottom: 6px;
+      color: rgba(255, 255, 255, 0.75);
     }
     #acme-wealth {
-      font-size: 16px;
+      font-size: 15px;
+      font-weight: 300;
+      color: rgba(255, 255, 255, 0.75);
     }
     #management-platforms {
       max-width: 100px;
       line-height: 38px;
-      margin: 8px 0 0 0;
+      margin: 6px 0 0 0;
     }
     #dotted-line {
       display: inline-block;

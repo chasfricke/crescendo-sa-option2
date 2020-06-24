@@ -1,0 +1,6 @@
+{
+  "projects": {
+    "default": "crescendo-fe-2",
+    "dev": "crescendo-fe-2"
+  }
+}
